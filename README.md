@@ -8,4 +8,23 @@ Minhas preferências do desktop [Omarchy](https://omarchy.org/) (v4.5).
 - **Terminais:** foot e ghostty usando zsh
 - **Outros:** git, tmux, starship, nvim, zshrc, branding, hook `theme-set` do owe
 
-Restaurar: `./install.sh` (faz backup `.bak.<timestamp>` do que sobrescrever).
+## Como restaurar
+
+Numa instalação nova do Omarchy:
+
+```bash
+git clone https://github.com/jefaokpta/omarchy-dotfiles
+cd omarchy-dotfiles
+./install.sh
+```
+
+O script:
+1. Copia tudo de `config/` para `~/.config/` e o `zshrc` para `~/.zshrc`, salvando antes um backup `.bak.<timestamp>` de cada arquivo que for sobrescrever.
+2. Clona os plugins da barra listados em `plugins.txt`.
+3. Aplica o tema Hackerman e a fonte GeometricJetBrainsMono Nerd Font.
+4. Recarrega o Hyprland e mostra os erros de config, se tiver algum.
+
+Depois:
+- Instale o Superwhisper à parte, porque o plugin `superwhisper-panel` não vem neste repo.
+- Se os monitores forem outros, ajuste `~/.config/hypr/monitors.lua`.
+- Rode `gh auth login` para refazer as credenciais do git.
