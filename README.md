@@ -5,7 +5,7 @@ Minhas preferências do desktop [Omarchy](https://omarchy.org/) (v4.5).
 - **Tema:** Hackerman · **Fonte:** GeometricJetBrainsMono Nerd Font
 - **Hyprland:** rolagem natural (mouse e touchpad); monitores HDMI-A-1 (esquerda) + eDP-1 (direita), escala 1
 - **Barra:** relógio com dia e data (`ddd dd/MM HH:mm`), calendário `derekross.calendar` no centro, `omarchy.elsewhen` com São Paulo/Londres/Dubai/Tóquio/LA, `takitani.sysmetrics`, tray do Superwhisper
-- **Atalhos:** `Super+Shift+W` WhatsApp, `Super+Shift+C` Google Chat (web apps; substituem Omawrite e Calendar)
+- **Atalhos:** `Super+Shift+W` WhatsApp, `Super+Shift+C` Google Chat, `Super+Shift+V` VS Code, `Super+Shift+I` IntelliJ IDEA
 - **Terminais:** foot e ghostty usando zsh
 - **zsh:** Oh My Zsh com `fzf`, menu de completar navegável, completar sem diferenciar maiúsculas, `zsh-autosuggestions`, `zsh-syntax-highlighting` e `zsh-completions`
 - **Outros:** git, tmux, starship, nvim, zshrc, branding, hook `theme-set` do owe
