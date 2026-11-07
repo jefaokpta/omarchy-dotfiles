@@ -25,3 +25,9 @@
 -- Logitech MX Keys examples:
 -- o.bind("SUPER + H", nil, "voxtype record toggle")
 -- o.bind("SUPER + PERIOD", nil, { panel = "omarchy.emojis" })
+
+-- WhatsApp on SUPER+SHIFT+W (was: Omawrite)
+o.rebind("SUPER + SHIFT + W", "WhatsApp", { webapp = "https://web.whatsapp.com/", focus = true })
+
+-- Google Chat on SUPER+SHIFT+C (was: Calendar)
+o.rebind("SUPER + SHIFT + C", "Google Chat", { webapp = "https://chat.google.com/", focus = true })
