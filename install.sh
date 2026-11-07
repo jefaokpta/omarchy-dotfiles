@@ -15,6 +15,7 @@ cp "$DIR/zshrc" "$HOME/.zshrc"
 while read -r id url; do
   [[ -d $HOME/.config/omarchy/plugins/$id ]] || git clone "$url" "$HOME/.config/omarchy/plugins/$id"
 done < "$DIR/plugins.txt"
+omarchy pkg add zsh-autosuggestions zsh-syntax-highlighting zsh-completions || true
 omarchy theme set Hackerman || true
 omarchy font set "GeometricJetBrainsMono Nerd Font" || true
 hyprctl reload >/dev/null && hyprctl configerrors

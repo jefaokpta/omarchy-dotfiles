@@ -4,8 +4,9 @@ Minhas preferências do desktop [Omarchy](https://omarchy.org/) (v4.5).
 
 - **Tema:** Hackerman · **Fonte:** GeometricJetBrainsMono Nerd Font
 - **Hyprland:** rolagem natural (mouse e touchpad); monitores HDMI-A-1 (esquerda) + eDP-1 (direita), escala 1
-- **Barra:** calendário `derekross.calendar` no centro, `omarchy.elsewhen` com São Paulo/Londres/Dubai/Tóquio/LA, `takitani.sysmetrics`, tray do Superwhisper
+- **Barra:** relógio com dia e data (`ddd dd/MM HH:mm`), calendário `derekross.calendar` no centro, `omarchy.elsewhen` com São Paulo/Londres/Dubai/Tóquio/LA, `takitani.sysmetrics`, tray do Superwhisper
 - **Terminais:** foot e ghostty usando zsh
+- **zsh:** Oh My Zsh com `fzf`, menu de completar navegável, completar sem diferenciar maiúsculas, `zsh-autosuggestions`, `zsh-syntax-highlighting` e `zsh-completions`
 - **Outros:** git, tmux, starship, nvim, zshrc, branding, hook `theme-set` do owe
 
 ## Como restaurar
@@ -21,8 +22,9 @@ cd omarchy-dotfiles
 O script:
 1. Copia tudo de `config/` para `~/.config/` e o `zshrc` para `~/.zshrc`, salvando antes um backup `.bak.<timestamp>` de cada arquivo que for sobrescrever.
 2. Clona os plugins da barra listados em `plugins.txt`.
-3. Aplica o tema Hackerman e a fonte GeometricJetBrainsMono Nerd Font.
-4. Recarrega o Hyprland e mostra os erros de config, se tiver algum.
+3. Instala os pacotes de plugins do zsh.
+4. Aplica o tema Hackerman e a fonte GeometricJetBrainsMono Nerd Font.
+5. Recarrega o Hyprland e mostra os erros de config, se tiver algum.
 
 Depois:
 - Instale o Superwhisper à parte, porque o plugin `superwhisper-panel` não vem neste repo.
