@@ -1,0 +1,2 @@
+derekross.calendar https://github.com/derekross/omarchy-calendar.git
+takitani.sysmetrics https://github.com/alextakitani/omarchy-sysmetrics
