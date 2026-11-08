@@ -37,3 +37,6 @@ o.bind("SUPER + SHIFT + V", "VS Code", { launch = "code", focus = "^[Cc]ode$" })
 
 -- IntelliJ IDEA on SUPER+SHIFT+I (was: Switch input language back)
 o.rebind("SUPER + SHIFT + I", "IntelliJ IDEA", { launch = "gtk-launch jetbrains-idea", focus = "^jetbrains-idea$" })
+
+-- Quake console (opens claude) on SUPER+S (was: Toggle scratchpad)
+o.rebind("SUPER + S", "Toggle Quake console", hl.dsp.workspace.toggle_special("qconsole"))
