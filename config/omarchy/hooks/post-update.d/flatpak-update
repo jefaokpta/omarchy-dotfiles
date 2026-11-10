@@ -1,0 +1,4 @@
+#!/bin/bash
+# Update Flatpak apps after omarchy update
+command -v flatpak &>/dev/null && flatpak update -y --noninteractive
+exit 0

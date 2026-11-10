@@ -8,7 +8,7 @@ Minhas preferências do desktop [Omarchy](https://omarchy.org/) (v4.5).
 - **Atalhos:** `Super+Shift+W` WhatsApp, `Super+Shift+C` Google Chat, `Super+Shift+V` VS Code, `Super+Shift+I` IntelliJ IDEA, `Super+S` console Quake com o Claude (85% altura × 90% largura, em `hypr/hyprland.lua`); agente padrão `claude`
 - **Terminais:** foot e ghostty usando zsh
 - **zsh:** Oh My Zsh com `fzf`, menu de completar navegável, completar sem diferenciar maiúsculas, `zsh-autosuggestions`, `zsh-syntax-highlighting` e `zsh-completions`
-- **Outros:** git, tmux, starship, nvim, zshrc, branding, hook `theme-set` do owe
+- **Outros:** git, tmux, starship, nvim, zshrc, branding, hook `theme-set` do owe, hook `post-update` que atualiza os Flatpaks
 
 ## Como restaurar
 
