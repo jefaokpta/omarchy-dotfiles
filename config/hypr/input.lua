@@ -61,6 +61,8 @@
 hl.config({
   input = {
     natural_scroll = true,
+    -- Foco só com clique (mouse over não muda o foco).
+    follow_mouse = 2,
     touchpad = {
       natural_scroll = true,
     },

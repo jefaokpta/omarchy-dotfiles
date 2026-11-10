@@ -30,7 +30,7 @@
 o.rebind("SUPER + SHIFT + W", "WhatsApp", { webapp = "https://web.whatsapp.com/", focus = true })
 
 -- Google Chat on SUPER+SHIFT+C (was: Calendar)
-o.rebind("SUPER + SHIFT + C", "Google Chat", { webapp = "https://chat.google.com/", focus = true })
+o.rebind("SUPER + SHIFT + C", "Google Chat", { webapp = "https://chat.google.com/?authuser=jefferson.reis@vipsolutions.com.br", focus = true })
 
 -- VS Code on SUPER+SHIFT+V
 o.bind("SUPER + SHIFT + V", "VS Code", { launch = "code", focus = "^[Cc]ode$" })
@@ -40,3 +40,23 @@ o.rebind("SUPER + SHIFT + I", "IntelliJ IDEA", { launch = "gtk-launch jetbrains-
 
 -- Quake console (opens claude) on SUPER+S (was: Toggle scratchpad)
 o.rebind("SUPER + S", "Toggle Quake console", hl.dsp.workspace.toggle_special("qconsole"))
+
+-- YouTube Music on SUPER+SHIFT+M (was: Spotify)
+o.rebind("SUPER + SHIFT + M", "YouTube Music", { webapp = "https://music.youtube.com/", focus = true })
+
+-- SUPER+1..0 switches the same workspace number on ALL monitors (focus stays on current monitor)
+for workspace = 1, 10 do
+  o.rebind("SUPER + code:" .. tostring(workspace + 9), "Switch all monitors to workspace " .. workspace, function()
+    local current = hl.get_active_monitor()
+    if not current then return end
+    for _, monitor in ipairs(hl.get_monitors()) do
+      if monitor.name ~= current.name and not monitor.is_mirror then
+        o.workspaces.focus(workspace, monitor.name)()
+      end
+    end
+    o.workspaces.focus(workspace, current.name)()
+  end)
+end
+
+-- Terminal always opens in home (don't inherit cwd of active window)
+o.rebind("SUPER + RETURN", "Terminal", "omarchy-launch-terminal")
