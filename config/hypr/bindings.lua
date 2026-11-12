@@ -60,3 +60,6 @@ end
 
 -- Terminal always opens in home (don't inherit cwd of active window)
 o.rebind("SUPER + RETURN", "Terminal", "omarchy-launch-terminal")
+
+-- Move all windows from workspace 2 to workspace 1 on SUPER+ALT+M
+o.bind("SUPER + ALT + M", "Move all windows from workspace 2 to 1", [[bash -c 'for a in $(hyprctl clients -j | jq -r ".[] | select(.workspace.id==2) | .address"); do hyprctl dispatch "hl.dsp.window.move({ workspace = \"1\", follow = false, window = \"address:$a\" })"; done']])

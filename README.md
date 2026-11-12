@@ -5,7 +5,7 @@ Minhas preferências do desktop [Omarchy](https://omarchy.org/) (v4.5).
 - **Tema:** Hackerman · **Fonte:** GeometricJetBrainsMono Nerd Font
 - **Hyprland:** rolagem natural (mouse e touchpad); monitores HDMI-A-1 (esquerda) + eDP-1 (direita), escala 1
 - **Barra:** relógio com dia e data (`ddd dd/MM HH:mm`), calendário `derekross.calendar` no centro, `omarchy.elsewhen` com São Paulo/Londres/Dubai/Tóquio/LA, `takitani.sysmetrics`, tray do Superwhisper
-- **Atalhos:** `Super+Shift+W` WhatsApp, `Super+Shift+C` Google Chat, `Super+Shift+V` VS Code, `Super+Shift+I` IntelliJ IDEA, `Super+S` console Quake com o Claude (85% altura × 90% largura, em `hypr/hyprland.lua`); agente padrão `claude`
+- **Atalhos:** `Super+Shift+W` WhatsApp, `Super+Shift+C` Google Chat, `Super+Shift+V` VS Code, `Super+Shift+I` IntelliJ IDEA, `Super+Alt+M` move todas as janelas do workspace 2 para o 1, `Super+S` console Quake com o Claude (85% altura × 90% largura, em `hypr/hyprland.lua`); agente padrão `claude`
 - **Terminais:** foot e ghostty usando zsh
 - **zsh:** Oh My Zsh com `fzf`, menu de completar navegável, completar sem diferenciar maiúsculas, `zsh-autosuggestions`, `zsh-syntax-highlighting` e `zsh-completions`
 - **Outros:** git, tmux, starship, nvim, zshrc, branding, hook `theme-set` do owe, hook `post-update` que atualiza os Flatpaks
